@@ -1,5 +1,5 @@
-import {expect} from 'chai';
 import httpStatus from 'http-status';
+import should from 'should';
 import request from 'supertest';
 import app from '../src/app';
 
@@ -11,6 +11,6 @@ describe('Server', () => {
   });
 
   it('should example', () => {
-    expect(true).to.be.eq(true);
+    should(true).be.true();
   });
 });
